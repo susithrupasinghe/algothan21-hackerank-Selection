@@ -5,7 +5,7 @@ from openpyxl import Workbook
 from datetime import datetime
 
 
-filename = "iq.xlsx"
+filename = "iq_results.xlsx"
 Contest = "algothon2021"
 
 def read_participants(fname):
