@@ -6,7 +6,7 @@ How to use
 
 1.  Clone this repository
 2.  Navigate to project folder with CMD
-3.  Type   ```$ pip install -r requirements.txt```
+3.  Type   ```pip install -r requirements.txt```
 4.  Open ```main.py``` with Python IDLE
 5.  Chnage Hackerank Contest Name & IQ test excel file name on it
 6.  Save it
