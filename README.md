@@ -25,7 +25,7 @@ In selection process , There will be two types of test.
 
 This bot will make http requests with Hacker Rank Private API 
 ( Still there are no public API . So i have to Reverse Hackerank Web API )
-Then bot can retrive leaderboard details within few seconds ( Approx 0.5 second for 100 users )
+Then bot can retrive leaderboard details within few seconds ( Approx 0.5 second for 100 users . Without network/computing overhead )
 
 To generate final leaderboard , we have to input IQ test results as well.
 
