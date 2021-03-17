@@ -125,11 +125,11 @@ if __name__ == "__main__":
 
                 found = True
 
-                final_marks.append([h_user["id"] , iq_user[1] , iq_user[3] ,  iq_user[5] + h_user["score"]])
+                final_marks.append([h_user["id"] , iq_user[1] , iq_user[3] , h_user["score"],iq_user[5], iq_user[5] + h_user["score"]])
 
         if(not found):
 
-            final_marks.append([ h_user["id"] , "" , "" ,  h_user["score"]])
+            final_marks.append([ h_user["id"] , "" , "" , h_user["score"] , "" ,  h_user["score"]])
 
 
 
@@ -147,14 +147,14 @@ if __name__ == "__main__":
 
         if(not found):
             
-            final_marks.append([ iq_user[2] , iq_user[1] , iq_user[3] ,  iq_user[5]])
+            final_marks.append([ iq_user[2] , iq_user[1] , iq_user[3] , "" , iq_user[5], iq_user[5]])
 
             
 
 
     print("Sorting...")
 
-    final_marks = sorted(final_marks, reverse=True , key=lambda x: x[3])
+    final_marks = sorted(final_marks, reverse=True , key=lambda x: x[5])
 
     sliit_emails_only = []
 
@@ -164,7 +164,9 @@ if __name__ == "__main__":
 
             sliit_emails_only.append(x)
 
-
+    headers = ["SLIIT ID", "Name", "Email","Hacker Rank Score","IQ test Score","Total Score"]
+    final_marks.insert(0,headers)
+    sliit_emails_only.insert(0,headers)
 
     create_excel(final_marks,"All")
     create_excel(sliit_emails_only,"SLIIT Only")
