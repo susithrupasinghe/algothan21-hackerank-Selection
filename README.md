@@ -8,7 +8,7 @@ How to use
 2.  Navigate to project folder with CMD
 3.  Type   ```pip install -r requirements.txt```
 4.  Open ```main.py``` with Python IDLE
-5.  Chnage Hackerank Contest Name & IQ test excel file name on it
+5.  Chanage HackerRank Contest Name & IQ test excel file name on it
 6.  Save it
 7.   Just Double click on ```main.py``` OR Type ```python main.py ```
 
@@ -25,7 +25,7 @@ In selection process , There will be two types of test.
 
 This bot will make http requests with Hacker Rank Private API 
 ( Still there are no public API . So i have to Reverse Hackerank Web API )
-Then bot can retrive leaderboard details within few seconds ( Approx 0.5 second for 100 users . Without network/computing overhead )
+Then bot can retrive leaderboard details within few seconds ( Approx 0.3 second for 100 users . Without network/computing overhead )
 
 To generate final leaderboard , we have to input IQ test results as well.
 
