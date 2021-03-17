@@ -33,7 +33,7 @@ def read_participants(fname):
 
             if(y==3):
 
-                cell_dt.upper()
+                cell_dt = cell_dt.replace(" ","").upper()
                 
 
             sheet_row.append(cell_dt)
@@ -71,7 +71,9 @@ def get_content_users(contest):
 
                 for user_wrap in model_wrap:
 
-                    users.append({"id" : user_wrap["hacker"].upper(), "score" : user_wrap["score"] })
+                    uid = user_wrap["hacker"].replace(" ","").upper()
+
+                    users.append({"id" : uid , "score" : user_wrap["score"] })
 
                 total+=100
 
