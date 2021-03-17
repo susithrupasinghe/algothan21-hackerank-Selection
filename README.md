@@ -8,7 +8,7 @@ How to use
 2.  Navigate to project folder with CMD
 3.  Type   ```pip install -r requirements.txt```
 4.  Open ```main.py``` with Python IDLE
-5.  Chnage Hackerank Contest Name & IQ test excel file name on it
+5.  Chanage HackerRank Contest Name & IQ test excel file name on it
 6.  Save it
 7.   Just Double click on ```main.py``` OR Type ```python main.py ```
 
